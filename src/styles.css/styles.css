@@ -1,0 +1,88 @@
+/* Base Styles */
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Gallery Layout */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  /* Tour Card */
+  .TourCard {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tour-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .Tour-image {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 8px; /* Optional: Add rounded corners */
+  }
+  
+  .tour-content {
+    padding: 1rem;
+  }
+  
+  .tour-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  /* Buttons */
+  button {
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-btn {
+    background: none;
+    color: #3498db;
+    padding: 0;
+    margin-left: 0.5rem;
+  }
+  
+  .remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Loading/Error States */
+  h2 {
+    text-align: center;
+    margin: 2rem 0;
+  }
